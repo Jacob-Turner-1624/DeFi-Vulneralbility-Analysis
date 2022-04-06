@@ -1,0 +1,21 @@
+﻿You need:
+* Docker
+* Ubuntu
+* Mythril
+* Smart Contracts
+
+
+1. Setup docker
+2. Set up linux (ubuntu)
+3. Download and install Mythril into Docker
+   1. https://github.com/ConsenSys/mythril
+4. Find smart contracts to test on
+5. The open command prompt
+   1. Know the  location of the smart contracts on your CPU
+   2. Know what level of analysis  you would like to do
+   3. Input this command :
+      1. docker run -d -v {location of contract}:/home/mythril mythril/myth -v 1 analyze /home/mythril/{name of contract} 
+6. Open docker.
+   1. The most recent volume should be your running mythril analysis.
+   2. This will take some time…..
+   3. When it is complete go to the volumes logs to see the analysis
